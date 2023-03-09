@@ -16,6 +16,8 @@ robocopy "%src%:/Program Files/" "%dest%:/%user%/Program Files/" /e /xj /w:0 /r:
 robocopy "%src%:/Program Files (x86)/" "%dest%:/%user%/Program Files (x86)/" /e /xj /w:0 /r:0 /COPYALL /LOG:%dest%:/%user%/pf86copy.log
 robocopy "%src%:/ProgramData/" "%dest%:/%user%/ProgramData/" /e /xj /w:0 /r:0 /COPYALL /LOG:%dest%:/%user%/pdcopy.log
 
+echo.
 echo Backup complete!
+echo.
 
 pause
