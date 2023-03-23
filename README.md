@@ -12,7 +12,7 @@ Automated backup script, copies the Users, Program Files, Program Files (x86), a
 
 ### mbr2gpt.bar
 
-Runs the validation to ensure that the hard drive can be converted from CMS to UEFI then prompts you with a 'yes/no' whether the validation was successful, if it was it runs the conversion and reboots to BIOS for you to disable CSM support. If no, the script ends and it suggests that there may be more than three drive partitions, which is a limitation of the tool.
+For changing your Windows installation drive from CSM to UEFI, useful when upgrading components but using an old drive. First it runs validation, then prompts the user (Y/N) asking whether the validation was successful. If yes, it runs the conversion and reboots straight to BIOS so you can disable CSM. If no, it stops the script and suggests checking if there are more than three partitions, a limitation of the tool.
 
 ### system-scan.bat
 
