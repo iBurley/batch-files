@@ -10,6 +10,10 @@ Run all as administrator!
 
 Automated backup script, copies the Users, Program Files, Program Files (x86), and ProgramData directories. It prompts the user for three variables, the source drive letter, the destination drive letter, and a last name which it uses to create a directory where the data is copied. Each directory copied creates a separate log file in case of errors. 
 
+### mbr2gpt.bar
+
+Runs the validation to ensure that the hard drive can be converted from CMS to UEFI then prompts you with a 'yes/no' whether the validation was successful, if it was it runs the conversion and reboots to BIOS for you to disable CSM support. If no, the script ends and it suggests that there may be more than three drive partitions, which is a limitation of the tool.
+
 ### system-scan.bat
 
 Very simple, it just runs the built-in Windows SFC and DISM scans to find and replace any corrupted Windows system files.
